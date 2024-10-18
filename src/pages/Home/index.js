@@ -45,8 +45,8 @@ export default function Home() {
         <nav>
           <MdOutlineReceiptLong size={40}></MdOutlineReceiptLong>
           <h4>Demandas</h4>
-          <Links>Acessar</Links>
-          <Links>Criar nova Demanda</Links>
+          <Links to="/demandas">Acessar</Links>
+          <Links to="/criar-demanda">Criar nova Demanda</Links>
         </nav>
       </Div>
       <Section>

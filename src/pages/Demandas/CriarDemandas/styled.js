@@ -25,12 +25,50 @@ export const Div = styled.div`
 export const Form = styled.form`
 display: flex;
 flex-direction: column;
+justify-content: center;
+/* align-items: flex-start; */
+background-color: #F21D2F;
+
+width: 400px;
+margin: 0 auto;
 margin-top: 20px;
+padding: 20px;
+border-radius: 15px;
+
+h2 {
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 350px;
+  height: 200px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+select {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+  option {
+    /* background-color: black; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+}
 
 label {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  color: white;
+  font-weight: bolder;
 }
 
 input {

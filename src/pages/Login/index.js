@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "../../styles/GlobalStyle";
 import { Form } from './styled';
+import { BsPersonBadge } from "react-icons/bs";
 
 import { useDispatch } from "react-redux";
 
@@ -36,14 +37,14 @@ export default function Login(props) {
   }
 
   return (
-    <Container>
+    <Form onSubmit={handleSubmit}>
+      <BsPersonBadge size={50} color="black"></BsPersonBadge>
       <h2>Login</h2>
-      <Form onSubmit={handleSubmit}>
-        <label htmlFor="email">E-mail: <input type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Seu e-mail" /></label>
-        <label htmlFor="password">Senha: <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Sua senha" /></label>
-        <button type="submit">Acessar</button>
-      </Form>
-    </Container>
+      <input type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Seu e-mail" />
+      <br />
+      <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Sua senha" />
+      <button type="submit">Acessar</button>
+    </Form >
 
   );
 }
